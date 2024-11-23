@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MinMax</title>
+    <style>
+     
+      
+    </style>
+  </head>
+  <body>
+
+    <input placeholder="give numbers " 
+    class="value">
+    <button onclick="numberTake();
+    ">add</button>
+    <p class="numbers"></p>
+    <button onclick="giveMaxMinValue();">find max min</button>
+    <p class="maxValue"></p>
+    
+
+
+      
+  
+    
+   
+    <script>
+      let numbers= (document.querySelector('.numbers')); //ayto poy grafei i paragrafos , sigkekrimena numbers.innerHTML // 
+      let inputElement = document.querySelector('.value'); //h timh poy pairnei otan grafeis, dld to inputElement.value sigkekrimena .//
+      let maxValue = (document.querySelector('.maxValue'));
+      
+     
+     
+      const arrayofnumbers = [];
+      
+      
+      function numberTake()
+      {
+        
+        arrayofnumbers.push(inputElement.value);
+        numbers.innerHTML=`numbers [${arrayofnumbers}]`;
+        inputElement.value='';
+       
+      
+      };
+      
+   function giveMaxMinValue()
+    {
+      var Max=0;
+      for (let i=0; i < arrayofnumbers.length; i=i+1){
+        
+      if ( Max<arrayofnumbers[i] )
+      {
+        Max=arrayofnumbers[i];
+        console.log(Max);
+       
+      }
+      else {
+        Max=Max;
+        
+      }
+      
+      }
+      console.log(Max);
+      
+      //2,3,5,8,2,6//
+      maxValue.innerHTML = `Max value is ${Max}`;
+   
+    };
+    
+
+
+
+    </script>
+  </body>
+</html>
+
+

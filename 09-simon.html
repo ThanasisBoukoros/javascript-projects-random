@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+    <title>Rock Paper Scissors</title>
+  </head>
+   
+  <body>
+   <input placeholder="Name" class="Name">
+   <button onclick="
+   NameBelow(); 
+   ">Submit</button>
+   <p class="NameBelow"></p>
+  
+   
+    <script>
+    let Name = document.querySelector('.Name');
+    
+    
+    function NameBelow() {
+    let NameBElow = document.querySelector('.NameBelow');
+
+    NameBElow.innerHTML = ` Your name is ${Name.value} `;
+    console.log(Name.value); 
+    }
+    </script>
+  </body>
+</html>
+
+

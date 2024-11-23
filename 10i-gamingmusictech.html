@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+    
+    <title>Gaming-Music_Tech</title>
+  </head>
+  <style>
+    .Gaming-button {
+      background-color: rgb(200, 200, 200);
+      color: black;
+      margin-right: 15px;
+      border-radius: 15px;
+      font-size: 50px;
+      cursor: pointer;
+    
+    }
+    .press-Gaming-button{
+      background-color: black;
+      color: white;
+    }
+    .Music-button {
+      background-color: rgb(200, 200, 200);
+      color: black;
+      margin-right: 15px;
+      border-radius: 15px;
+      font-size: 50px;
+      cursor: pointer;
+
+    }
+    .press-Music-button{
+      background-color: black;
+      color: white;
+        }
+    .Tech-button {
+      background-color: rgb(200, 200, 200);
+      color: black;
+      margin-right: 15px;
+      border-radius: 15px;
+      font-size: 50px;
+      cursor: pointer;
+    }
+    .press-Tech-button{
+      background-color: black;
+      color: white;
+    }
+  </style>
+   
+  <body>
+   <button class="Gaming-button" onclick="Gamingfun();">Gaming</button>
+   <button class="Music-button"
+   onclick="Musicfun();" ondblclick="
+   Tech">Music</button>
+   <button class="Tech-button" onclick="Techfun();" >Tech</button>
+   
+    <script>
+      
+      let Gaming = document.querySelector('.Gaming-button');
+      let Music = document.querySelector('.Music-button');
+      let Tech = document.querySelector('.Tech-button');
+      function Gamingfun() {
+        if (Gaming.classList.contains('press-Gaming-button')) 
+        {
+         Gaming.classList.remove('press-Gaming-button');
+        }
+        else {
+          Gaming.classList.add('press-Gaming-button')
+          
+        }
+       
+
+
+
+      };
+      
+      function Musicfun() {
+       if (Music.classList.contains('press-Music-button'))
+       {
+        Music.classList.remove('press-Music-button');
+       }
+       else {
+        Music.classList.add('press-Music-button')
+       }
+
+      };
+      function Techfun() {
+        
+      
+       
+        
+        if (Tech.classList.contains('press-Tech-button'))
+      {
+          Tech.classList.remove('press-Tech-button');
+      }
+       
+     
+        else {
+          Tech.classList.add('press-Tech-button');
+        }
+      
+
+      };
+      
+      
+      /*
+    let Name = document.querySelector('.Name');
+    
+    
+    function NameBelow() {
+    let NameBElow = document.querySelector('.NameBelow');
+
+    NameBElow.innerHTML = ` Your name is ${Name.value} `;
+    console.log(Name.value); 
+    }
+    */
+    
+    </script>
+    
+  </body>
+
+  
+</html>
+
+
